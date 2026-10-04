@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jujutsu Shenanigans | Ultimate Guide</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="relative">
+<div class="fixed -top-32 -right-32 w-96 h-96 rounded-full bg-purple-700/10 blur-3xl pointer-events-none"></div>
+<div class="fixed bottom-0 -left-40 w-96 h-96 rounded-full bg-red-700/10 blur-3xl pointer-events-none"></div>
+
+<nav class="fixed top-0 w-full z-50 bg-[#121212]/85 backdrop-blur-md border-b border-[#2a2a2a]">
+ <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+  <div class="font-bold text-xl tracking-wider"><span class="text-red-500">J</span>-SHENANIGANS</div>
+  <div class="hidden md:flex gap-6 text-sm"><a class="navlink" href="#mechanics">Mechanics</a><a class="navlink" href="#roster">Characters</a><a class="navlink" href="#combos">Combos</a><a class="navlink" href="#counter">Counters</a></div>
+ </div>
+</nav>
+
+<header id="home" class="pt-32 pb-20 px-4 text-center max-w-6xl mx-auto">
+ <p class="uppercase tracking-[.3em] text-xs text-gray-500 mb-5">Unofficial Community Guide • Meta October 2026</p>
+ <h1 class="text-5xl md:text-7xl font-black tracking-tight">Master Your<br><span class="text-gradient">Cursed Energy</span></h1>
+ <p class="mt-6 max-w-3xl mx-auto text-gray-400 text-lg">Panduan interaktif Jujutsu Shenanigans untuk memahami mekanik, roster, awakening, domain, combo, dan matchup.</p>
+ <div class="mt-8 flex justify-center gap-3 flex-wrap"><a href="#roster" class="bg-red-600 hover:bg-red-700 px-7 py-3 rounded-full font-bold">Lihat Roster</a><a href="#mechanics" class="border border-purple-500 px-7 py-3 rounded-full font-bold">Pelajari Dasar</a></div>
+</header>
+
+<section id="mechanics" class="py-20 bg-[#151515] border-y border-[#292929]">
+<div class="max-w-7xl mx-auto px-4">
+ <div class="text-center mb-12"><h2 class="text-4xl font-bold">Sistem Pertarungan</h2><p class="text-gray-400 mt-3">Fondasi yang berlaku di sebagian besar roster.</p></div>
+ <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+  <div class="card p-6 rounded-2xl"><i class="fas fa-mouse text-3xl text-red-500 mb-4"></i><h3 class="font-bold text-xl">M1</h3><p class="text-gray-400 mt-2 text-sm">String basic attack. M1 menjadi fondasi pressure dan banyak combo.</p></div>
+  <div class="card p-6 rounded-2xl"><i class="fas fa-arrows-up-down text-3xl text-purple-400 mb-4"></i><h3 class="font-bold text-xl">Slam / Uppercut</h3><p class="text-gray-400 mt-2 text-sm">Variasikan input M1 + Space untuk mengubah arah combo dan launcher.</p></div>
+  <div class="card p-6 rounded-2xl"><i class="fas fa-bolt text-3xl text-red-500 mb-4"></i><h3 class="font-bold text-xl">Ragdoll Cancel</h3><p class="text-gray-400 mt-2 text-sm">Salah satu alat defensif terpenting untuk keluar dari combo lawan.</p></div>
+  <div class="card p-6 rounded-2xl"><i class="fas fa-fire text-3xl text-purple-400 mb-4"></i><h3 class="font-bold text-xl">G • Awakening</h3><p class="text-gray-400 mt-2 text-sm">Damage yang kamu berikan mengisi bar. G membuka awakening atau move khusus, tergantung karakter.</p></div>
+ </div>
+</div>
+</section>
+
+<section id="roster" class="py-20">
+<div class="max-w-7xl mx-auto px-4">
+ <div class="text-center mb-10"><h2 class="text-4xl font-bold">Character Roster</h2><p class="text-gray-400 mt-2">Nama JJS ditampilkan bersama nama karakter Jujutsu Kaisen.</p></div>
+ <div class="flex flex-col md:flex-row gap-3 mb-8">
+  <input id="search" class="search rounded-xl px-4 py-3 flex-1" placeholder="Cari: Gojo, Honored One, Yuta, Nanami...">
+  <select id="filter" class="search rounded-xl px-4 py-3"><option value="all">Semua status</option><option value="complete">Complete</option><option value="early">Early Access</option><option value="base">Base-Only</option><option value="special">Special / Others</option></select>
+ </div>
+ <div id="rosterGroups" class="space-y-5"></div>
+ <p id="empty" class="hidden text-center text-gray-500 py-12">Karakter tidak ditemukan.</p>
+</div>
+</section>
+
+<section id="combos" class="py-20 bg-[#151515] border-y border-[#292929]">
+<div class="max-w-5xl mx-auto px-4">
+ <div class="text-center mb-10"><h2 class="text-4xl font-bold">Combo & Gameplan</h2><p class="text-gray-400 mt-2">Gunakan sebagai referensi, bukan daftar combo yang wajib dihafal.</p></div>
+ <div class="grid md:grid-cols-2 gap-5">
+  <div class="card rounded-2xl p-6"><span class="badge">Universal</span><h3 class="text-xl font-bold mt-3">M1 → Slam → Dash → Pressure</h3><p class="text-gray-400 mt-2 text-sm">Bangun pressure setelah knockdown, lalu sesuaikan extension dengan moveset karakter.</p></div>
+  <div class="card rounded-2xl p-6"><span class="badge">Vessel • Yuji / Sukuna</span><h3 class="text-xl font-bold mt-3">Divergent Fist / Black Flash</h3><p class="text-gray-400 mt-2 text-sm">Manfaatkan passive dan timing Black Flash untuk mempertahankan pressure jarak dekat.</p></div>
+  <div class="card rounded-2xl p-6"><span class="badge">Honored One • Gojo</span><h3 class="text-xl font-bold mt-3">Blue → Launcher → Red</h3><p class="text-gray-400 mt-2 text-sm">Gunakan Lapse Blue untuk mengatur posisi sebelum menghubungkan serangan lanjutan.</p></div>
+  <div class="card rounded-2xl p-6"><span class="badge">Cursed Partners • Yuta</span><h3 class="text-xl font-bold mt-3">Rika → Copy → Domain</h3><p class="text-gray-400 mt-2 text-sm">Kelola Rika dan pilihan teknik copy sebelum masuk ke Authentic Mutual Love.</p></div>
+ </div>
+</div>
+</section>
+
+<section id="counter" class="py-20">
+<div class="max-w-5xl mx-auto px-4">
+ <div class="text-center mb-10"><h2 class="text-4xl font-bold">Counter Principles</h2><p class="text-gray-400 mt-2">Baca matchup sebagai prinsip, bukan resep tunggal.</p></div>
+ <div class="grid md:grid-cols-2 gap-5">
+  <div class="card p-6 rounded-2xl"><h3 class="font-bold text-xl">Gojo • Honored One</h3><p class="text-gray-400 mt-2">Hindari masuk ke pola serangan Blue/Red tanpa rencana. Perhatikan cooldown dan momen teleport.</p></div>
+  <div class="card p-6 rounded-2xl"><h3 class="font-bold text-xl">Mahito • Perfection</h3><p class="text-gray-400 mt-2">Jangan memberi ruang gratis untuk setup combo. Pilih pressure dekat atau jarak aman dengan disiplin.</p></div>
+  <div class="card p-6 rounded-2xl"><h3 class="font-bold text-xl">Hakari • Restless Gambler</h3><p class="text-gray-400 mt-2">Saat Jackpot aktif, prioritas berubah menjadi survival dan pengelolaan jarak.</p></div>
+  <div class="card p-6 rounded-2xl"><h3 class="font-bold text-xl">Ten Shadows • Megumi</h3><p class="text-gray-400 mt-2">Jangan asal mengejar summoner. Baca posisi shikigami dan cari celah saat summon selesai.</p></div>
+ </div>
+</div>
+</section>
+
+<footer class="bg-[#090909] border-t border-[#2a2a2a] py-10 text-center text-sm text-gray-500">
+ <p>Unofficial Jujutsu Shenanigans community guide.</p><p class="mt-2">Roster researched for October 2026. Game data can change after updates.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</html>
